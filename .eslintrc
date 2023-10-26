@@ -1,21 +1,22 @@
 {
-  // 環境
-  "env": {
-    "browser": true, // グローバル変数を許可する window,alert
-    "node": true, // processなど
-    "es6": true // es6版のJSを認識(アロー関数とか)
-  },
-  "parserOptions": {
-    "ecmaVersion": "latest", // 絵クマバージョン
-    "sourceType": "module" // import export
-  },
-  "rules": {
-    // "no-console": ["error"],
-    // "indent": 2,
-    // "quotes": ["error", "double"],
-    // "semi": ["error", "always"]
-    "linebreak-style": ["off"],
-    "no-unused-vars": ["off"]
-  },
-  "extends": ["airbnb-base"]
+    "env": {
+      "browser": true, //window, alert, document
+      "node": true, //process
+      "es6": true
+    },
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module" //import/export
+    },
+    "rules": {
+      // "no-console": ["error"],
+      // "indent": ["error", 2],
+      // "quotes": ["error", "double"],
+      // "semi": ["error", "always"],
+      "no-unused-vars": ["off"],
+      // "camelcase": ["warn"]
+      "linebreak-style": ["off"]
+    },
+    "extends": ["airbnb-base"]
 }
+  
