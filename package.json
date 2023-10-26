@@ -5,7 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --write app.js"
+    "format": "prettier --write app.js",
+    "prepare": "husky install" 
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -13,6 +20,8 @@
   "devDependencies": {
     "eslint": "^8.52.0",
     "eslint-config-airbnb": "^19.0.4",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.2",
     "prettier": "^3.0.3"
   },
   "dependencies": {
