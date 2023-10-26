@@ -6,11 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write app.js",
-    "prepare": "husky install" 
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.js": [
-      "prettier --write",
       "eslint --fix"
     ]
   },
